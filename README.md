@@ -13,10 +13,12 @@ An API for a social network web application where users can share their thoughts
 # Video Demonstration
 
 
-https://user-images.githubusercontent.com/88051358/148328092-d2ea563a-cce6-4997-85c7-60a61ff91790.mp4
+https://user-images.githubusercontent.com/88051358/148329140-ac3fe3e4-cdff-48c2-8f88-5edc32bde4b8.mp4
 
 
-https://user-images.githubusercontent.com/88051358/148328143-389aa70f-d485-449b-95b2-2fd167949ac4.mp4
+
+https://user-images.githubusercontent.com/88051358/148329145-f9463d71-949e-439e-a064-6e54df87106a.mp4
+
 
 
 
