@@ -3,35 +3,32 @@ const dateFormat = require('../utils/dateFormat');
 
 // reactions
 
-const reactionSchema = new Schema(
-    {
-        reactionId: {
-            type: Schema.Types.ObjectId,
-            default: () => new Types.ObjectIdId()
-        },
-        reactionBody: {
-            type: String,
-            required: true,
-            maxlength: 280
-        },
-        username: {
-            type: String,
-            required: true
-        },
-        createdAt: {
-            type: Date,
-            default: Date.now,
-            get: createdAtVal => dateFormat(createdAtVal)
-        } 
+const reactionSchema = new Schema ({
+    reactionId: {
+        type: Schema.Types.ObjectId,
+        default: () => new Types.ObjectId()
     },
-    {
-        toJSON: {
-            getters: true
-        },
-        id: false
+    reactionBody: {
+        type: String,
+        required: true,
+        maxlength: 280
+    },
+    username: { 
+        type: String,
+        required: true
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+        get: createdAtVal => dateFormat(createdAtVal)
     }
-)
-
+},
+{
+    toJSON: {
+        getters: true
+    },
+    id: false
+});
 // thoughts
 
 const thoughtSchema = new Schema(
@@ -69,4 +66,4 @@ thoughtSchema.virtual('reactionCount').get(function() {
 
 const Thought = model('Thought', thoughtSchema);
 
-module.exports = { Thought };
+module.exports = Thought;
